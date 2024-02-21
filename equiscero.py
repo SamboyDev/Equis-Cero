@@ -60,9 +60,9 @@ while not game_over:
         game_over = True
        elif event.type == pygame.MOUSEBUTTONDOWN:
         mouseX, mouseY = event.pos
-        if (mouseX >= 25 and mouseX < 350) and (mouseY >= 30 and mouseY < 350):
-         fila = (mouseY - 35) // 125
-         col = (mouseX - 35) // 125
+        if (mouseX >= 23 and mouseX < 355) and (mouseY >= 30 and mouseY < 350):
+         fila = (mouseY - 20) // 125
+         col = (mouseX - 15) // 125
          if tablero[fila][col] == '':
             tablero[fila][col] = turno
             fin_juego = verificar_ganador()
